@@ -118,7 +118,7 @@ img {
   height: auto;
 }
 
-[class*="-ibg"] {
+[class*="ibg"] {
   position: relative;
   & > img {
     position: absolute;
@@ -129,8 +129,8 @@ img {
     object-fit: cover;
   }
 }
-[class*="-ibg_contain"] {
-  img {
+[class*="ibg_contain"] {
+  & > img {
     object-fit: contain;
   }
 }
