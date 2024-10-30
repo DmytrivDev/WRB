@@ -22,7 +22,6 @@ body {
 
 .main {
   flex: 1 1 auto;
-  padding-bottom: 6rem;
 }
 
 [class*="__container"] {
@@ -50,10 +49,6 @@ body {
 
   [class*="__container"] {
     padding: 0 1em;
-  }
-
-  .main {
-    padding-bottom: 3rem;
   }
 }
 

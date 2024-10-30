@@ -21,6 +21,13 @@
   font-weight: 600;
   margin-bottom: 1.25rem;
 }
+.title4 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
 .tl-bl {
   color: var(--cm);
 }
@@ -32,8 +39,9 @@
 }
 
 .btn-def {
-  display: flex;
-  width: fit-content;
+  display: block;
+  min-width: 17.1875rem;
+  max-width: fit-content;
   text-align: center;
   font-weight: 700;
   line-height: normal;
@@ -43,6 +51,12 @@
   transition: all 0.15s ease-in;
   &:hover {
     box-shadow: 0 0.4375rem 0.5rem 0 rgba(0, 0, 0, 0.25) inset;
+  }
+  &.btnL {
+    background-color: var(--cl);
+  }
+  &.btnB {
+    background-color: var(--cb);
   }
 }
 
@@ -62,6 +76,10 @@
   }
   .title3 {
     font-size: 1.125rem;
+  }
+  .title4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .text-def {

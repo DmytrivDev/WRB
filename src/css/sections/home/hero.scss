@@ -1,10 +1,10 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 6rem 0;
+  padding: 16rem 0 6rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 
   &__container {
     position: relative;
@@ -93,8 +93,7 @@
 
 @media screen and (max-width: 960px) {
   .hero {
-    display: block;
-    padding: 15.25rem 0 3.4375rem 0;
+    padding: 16rem 0 5rem 0;
 
     &__text {
       font-size: 1rem;
@@ -103,6 +102,11 @@
 
     .btn-def {
       margin-bottom: 2.1875rem;
+    }
+
+    .title1 {
+      max-width: 35rem;
+      margin-bottom: 1rem;
     }
   }
 }

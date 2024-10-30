@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const questionList = document.querySelector('.question__list');
+const questionList = document.querySelector('.fqa__list');
 if (questionList) {
   instAccordion(questionList);
 }
