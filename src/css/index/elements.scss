@@ -1,5 +1,70 @@
+.sec-def {
+  padding: 6rem 0;
+}
+
+.title1 {
+  text-align: center;
+  font-size: 4rem;
+  line-height: normal;
+  margin-bottom: 2.5rem;
+}
+.title2 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.title3 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.tl-bl {
+  color: var(--cm);
+}
+
+.text-def {
+  color: var(--cm);
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.btn-def {
+  display: flex;
+  width: fit-content;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 1rem;
+  background-color: var(--cr);
+  transition: all 0.15s ease-in;
+  &:hover {
+    box-shadow: 0 0.4375rem 0.5rem 0 rgba(0, 0, 0, 0.25) inset;
+  }
+}
+
 @media screen and (max-width: 960px) {
-  .class {
+  .sec-def {
+    padding: 3rem 0;
+  }
+
+  .title1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .title2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .title3 {
+    font-size: 1.125rem;
+  }
+
+  .text-def {
+    font-size: 0.875rem;
   }
 }
 

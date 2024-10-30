@@ -1,0 +1,36 @@
+.present {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__video-ibg {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(2, 2, 2, 0.5);
+    }
+  }
+
+  &__play {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+  }
+}

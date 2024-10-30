@@ -1,10 +1,11 @@
 html,
 body {
+  font-optical-sizing: auto;
   font-family: var(--ff);
-  color: var(--cm);
+  background-color: var(--cg);
+  color: var(--cw);
   font-size: 1rem;
   line-height: 1.5;
-  font-optical-sizing: auto;
 }
 
 .overhide {
@@ -21,11 +22,11 @@ body {
 
 .main {
   flex: 1 1 auto;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 
 [class*="__container"] {
-  max-width: 90rem;
+  max-width: 85rem;
   padding: 0 2.5em;
   margin: 0 auto;
 }
@@ -48,29 +49,7 @@ body {
   }
 
   [class*="__container"] {
-    padding: 0 1.25em;
-  }
-
-  .main {
-    padding-bottom: 3.5rem;
-  }
-}
-
-/* --------- Adaptive desktop (772px) --------- */
-
-// @media screen and (max-width: 772px) {
-//   html,
-//   body {
-//     font-size: 2.07vw;
-//   }
-// }
-
-/* --------- Adaptive desktop (500px) --------- */
-
-@media screen and (max-width: 500px) {
-  html,
-  body {
-    font-size: 16px;
+    padding: 0 1em;
   }
 
   .main {

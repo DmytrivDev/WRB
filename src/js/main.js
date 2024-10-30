@@ -1,2 +1,2 @@
-import './parts/modal.js';
-import './parts/burger.js';
+import './parts/splide.js';
+import './parts/accordion.js';
