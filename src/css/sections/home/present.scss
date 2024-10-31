@@ -10,19 +10,8 @@
     position: relative;
     width: 100%;
     max-width: 50rem;
-    height: 25rem;
     border-radius: 0.5rem;
     overflow: hidden;
-
-    img,
-    video {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-    }
 
     &::before {
       content: "";
@@ -33,12 +22,31 @@
       width: 100%;
       height: 100%;
       background-color: rgba(2, 2, 2, 0.5);
+      transition: all 0.15s ease-in;
+    }
+    &:hover {
+      &::before {
+        background-color: rgba(2, 2, 2, 0.4);
+      }
     }
 
     &.bg-hidd {
       &::before {
         display: none;
       }
+    }
+  }
+  &__box {
+    position: relative;
+    padding-top: calc(100% / 16 * 9);
+
+    video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
     }
   }
 
@@ -50,5 +58,14 @@
     transform: translateX(-50%) translateY(-50%);
     width: 4rem;
     height: 4rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .present {
+    &__play {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
